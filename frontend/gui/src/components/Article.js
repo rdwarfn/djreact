@@ -12,14 +12,13 @@ const Article = (props) => {
     return (
 
         <List itemLayout="vertical" size="large"
-        pagination={{
-            onChange: (page) => {
+        pagination={{ onChange: (page) => {
             console.log(page);
             },
             pageSize: 3,
         }}
         dataSource={props.data}
-        footer={<div><b>ant design</b> footer part</div>}
+        footer={<div><b>Django React</b></div>}
         renderItem={item => (
             <List.Item
             key={item.title}

@@ -29,7 +29,7 @@ const CustomLayout = (props) => {
                 </div>
             </Content>
             <Footer style={{ textAlign: 'center' }}>
-            Ant Design ©2018 Created by Ant UED
+            Ridwan Arifin ©2019
             </Footer>
         </Layout>
     );
