@@ -1,18 +1,7 @@
-from rest_framework import viewsets
-
 from articles.models import Article
 from .serializers import ArticleSerializer
 
-
-class ArticleViewSet(viewsets.ModelViewSet):
-    """
-    A viewset for viewing and editing user instances.
-    """
-    serializer_class = ArticleSerializer
-    queryset = Article.objects.all()
-
-
-
+# cara pertama
 # from rest_framework.generics import (
 #     ListAPIView, 
 #     RetrieveAPIView, 
@@ -44,3 +33,13 @@ class ArticleViewSet(viewsets.ModelViewSet):
 # class ArticleUpdateView(UpdateAPIView):
 #     queryset = Article.objects.all()
 #     serializer_class = ArticleSerializer
+
+
+# cara kedua
+from rest_framework import viewsets
+class ArticleViewSet(viewsets.ModelViewSet):
+    """
+    A viewset for viewing and editing user instances.
+    """
+    serializer_class = ArticleSerializer
+    queryset = Article.objects.all()
