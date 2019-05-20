@@ -16,6 +16,7 @@ class ArticleList extends Component {
                 this.setState({
                     articles: res.data
                 });
+                console.log(res.data)
             })
     }
 
@@ -25,7 +26,11 @@ class ArticleList extends Component {
                 <Article data={this.state.articles} />
                 <br/>
                 <h1>Create Article</h1>
-                <CustomForm />
+                <CustomForm 
+                    requestType="post"
+                    articleID={null}
+                    btnText="Create"
+                />
             </div>
         );
     }
